@@ -1,0 +1,165 @@
+@import url(./design-system.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: var(--font-family-sans);
+}
+
+.main-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-palette-7);
+}
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: var(--color-palette-6);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+/*left*/
+.navdiv-left {
+    display: flex;
+    height: 100%;
+}
+
+.navbar label {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navbar img {
+    overflow: hidden;
+    height: 100%;
+}
+
+/*right*/
+.navdiv-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-signin,
+.button-signup {
+    background-color: var(--color-button-1);
+    color: var(--color-text-1);
+    font-size: medium;
+    padding: 10px;
+    width: 100px;
+    font-weight: var(--font-weight-1);
+    border-radius: var(--border-radius-s);
+    border: none;
+    cursor: pointer;
+}
+
+.button-signin:hover,
+.button-signup:hover {
+    background-color: var(--color-button-2);
+    color: var(--color-text-2);
+}
+
+.button-language {
+    padding: 10px;
+    background-color: var(--color-palette-4);
+    color: var(--color-text-1);
+    border: none;
+    font-size: medium;
+    border-radius: var(--border-radius-s);
+    cursor: pointer;
+}
+
+.button-language:hover {
+    background-color: var(--color-palette-5);
+    color: var(--color-text-2);
+}
+
+.button-language i {
+    font-size: large;
+}
+
+.button-connection {
+    padding: 10px;
+    background-color: var(--color-palette-4);
+    color: var(--color-text-1);
+    border: none;
+    font-size: medium;
+    border-radius: var(--border-radius-s);
+    cursor: pointer;
+}
+
+.button-connection:hover {
+    background-color: var(--color-palette-5);
+    color: var(--color-text-2);
+}
+
+/*dropdown menu*/
+.dropdown-menu-language {
+    position: relative;
+    background-color: var(--color-palette-5);
+    border-radius: var(--border-radius-s);
+}
+
+.dropdown-content-language {
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--color-palette-6);
+    position: absolute;
+    transition: opacity 0.1s ease, visibility 0.1s ease;
+    border-bottom-left-radius: var(--border-radius-s);
+    border-bottom-right-radius: var(--border-radius-s);
+}
+
+.dropdown-content-language button {
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    background-color: var(--color-palette-5);
+    border: none;
+    color: var(--color-text-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown-content-language button:hover {
+    background-color: var(--color-palette-6);
+    color: var(--color-text-3);
+}
+
+.dropdown-menu-language:hover .dropdown-content-language {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-menu-language:hover {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dropdown-item2{
+border-bottom-left-radius: var(--border-radius-s);
+border-bottom-right-radius: var(--border-radius-s);
+}
+
+.dropdown-content-language img {
+    height: 25%;
+    width: 25%;
+}
